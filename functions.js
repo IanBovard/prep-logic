@@ -131,17 +131,44 @@ console.log("Is not: " + isNotEqual("Mario", "Mario"));
 /*Function - doubleEquals
 Write a function that takes two variables of type Boolean called first and second respectively. Return true if both values are true otherwise return false.*/
 
-
+function doubleEquals(first, second){
+  if (first && second === true){
+    return true;
+  }else{
+    return false;
+  }
+}
+doubleEquals("Mario", "Mario");
+console.log("Double: " + doubleEquals("Mario" === "Mario", "Luigi" === "Mario"));
+console.log("Double: " + doubleEquals(33 > 21, 19 < 33 ));
 
 /*Function - totalOver30
 Write a function that takes three variables of type Number called first and second and third respectively. Return true if the sum of all values are greater than 30 otherwise return false.*/
 
-
+function totalOver30(firstNum, secondNum, thirdNum){
+  if (firstNum + secondNum + thirdNum > 30){
+    return true;
+  }else{
+    return false;
+  }
+}
+totalOver30(10,10, 11);
+console.log("Total: " + totalOver30(10, 10, 11));
+console.log("Total: " + totalOver30(10, 10, 9));
 
 /*Function - totalUnderWhat
 Write a function that takes four variables of type Number called first and second and third and fourth respectively. Return true if the sum of first, second and third are less than fourth otherwise return false.*/
 
-
+function totalUnderWhat(firstNum, secondNum, thirdNum, fourthNum){
+  if (firstNum + secondNum + thirdNum < fourthNum){
+    return true;
+  }else{
+    return false;
+  }
+}
+totalUnderWhat(10, 10, 10, 31);
+console.log("Under: " + totalUnderWhat(10, 10, 10, 31));
+console.log("Under:" + totalUnderWhat(10, 10, 10, 29));
 
 /*Function - looptoNumber
 Write a function that takes in a Number value named limit and have the function write a for loop that loops the number of times of limit and console.log each number as the loop executes.*/
