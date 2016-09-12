@@ -48,33 +48,86 @@ Function - youGetTaco
 Write a function that takes a single String parameter called action. If the value passed into our function is eat have the function return the String value EAT TACOS.
 */
 
-
-
+function youGetTaco(action){
+  if (action === "eat"){
+    return "EAT TACOS";
+  }else{
+    return false;
+  }
+}
+youGetTaco("eat");
+console.log("Taco: " + youGetTaco("eat"));
+console.log("Taco: " + youGetTaco("barf"));
 /*Function - isNumberGreaterThan
 Write a function that takes two variables of type Number called first and second respectively. Return true if the first number is greater than the second.*/
 
-
-
+function isNumberGreaterThan(firstNum, secondNum){
+  if (firstNum > secondNum){
+    return true;
+  }else{
+    return false;
+  }
+}
+isNumberGreaterThan(11, 10);
+console.log("Greater: " + isNumberGreaterThan(11, 10));
+console.log("Greater: " + isNumberGreaterThan(10, 11));
 /*Function - isTrue
 Write a function that takes in a Boolean value named val and have the function return whether the value is true.*/
 
-
+function isTrue(val){
+  if (val === "Megaman"){
+    return true;
+  }else{
+    return false;
+  }
+}
+isTrue("Megaman");
+console.log("True: " + isTrue("Megaman"));
+console.log("True: " + isTrue("Protoman"));
 
 
 /*Function - isFalse
 Write a function that takes in a Boolean value named val and have the function return whether the value is false.*/
 
-
+function isFalse(val){
+  if (val === "Protoman"){
+    return false;
+  }else{
+    return true;
+  }
+}
+isFalse("Protoman");
+console.log("False: " + isFalse("Protoman"));
+console.log("False: " + isFalse("Megaman"));
 
 
 /*Function - isEqual
 Write a function that takes two variables of type String called firstWord and secondWord respectively. Return 'AWWWWRIGHT' if the two are equal otherwise return 'Y U NO MATCH!'.*/
 
+function isEqual(firstWord, secondWord){
+  if (firstWord === secondWord){
+    return "AWWWWRIGHT!";
+  }else{
+    return "Y U NO MATCH!";
+  }
+}
+isEqual("Mario", "Mario");
+console.log("Is: " + isEqual("Mario", "Mario"));
+console.log("Is: " + isEqual("Luigi", "Mario"));
 
 /*Function - isNotEqual
 Write a function that takes two variables of type String called firstWord and secondWord respectively. Return 'AWWWWRIGHT' if the two are not equal otherwise return 'Y U MATCH!'.*/
 
-
+function isNotEqual(firstWord, secondWord){
+  if (firstWord !== secondWord){
+    return "AWWWWRIGHT!";
+  }else{
+    return "Y U MATCH!";
+  }
+}
+isNotEqual("Luigi", "Mario");
+console.log("Is not: " + isNotEqual("Luigi", "Mario"));
+console.log("Is not: " + isNotEqual("Mario", "Mario"));
 /*Function - doubleEquals
 Write a function that takes two variables of type Boolean called first and second respectively. Return true if both values are true otherwise return false.*/
 
